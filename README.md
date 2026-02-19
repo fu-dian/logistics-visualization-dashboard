@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# biyeshengji
-
-This template should help get you started developing with Vue 3 in Vite.
-
 ## Recommended IDE Setup
 
 [VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
@@ -73,4 +68,3 @@ cd logistics-visualization-dashboard
 
 # 安装依赖
 npm install
->>>>>>> cc9bf1144fedcc56b534ddfca5b51c2e63cacdb1
