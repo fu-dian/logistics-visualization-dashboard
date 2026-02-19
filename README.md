@@ -51,7 +51,7 @@ npm run lint
 - 网络请求：Axios（封装为request工具）
 - 样式：原生CSS (Scoped)
 - 后端：Python Fastapi
-- 
+
 ## 演示截图
 ![物流可视化大屏全貌](screenshots/局部截取_20260219_161856.png)
 
