@@ -1,5 +1,3 @@
-# logistics-visualization-dashboard
-Logistics visualization dashboard based on Vue and ECharts, showing national order distribution, sales trends, user portraits, and transportation mode ratio with real-time update.
 # 物流可视化大屏 (Logistics Visualization Dashboard)
 
 ## 项目介绍
