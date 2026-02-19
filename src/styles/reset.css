@@ -1,0 +1,50 @@
+/* 重置默认样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 重置列表样式 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 重置链接样式 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 重置按钮/输入框样式 */
+button,
+input,
+select,
+textarea {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+}
+
+/* 重置表格样式 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 图片自适应 */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* 全局body样式 */
+body {
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  background: #f8f9fa;
+  line-height: 1.5;
+}

@@ -1,0 +1,66 @@
+/* 导入重置样式 */
+@import './reset.css';
+
+/* 全局容器样式 */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 通用间距类 */
+.mt-10 { margin-top: 10px; }
+.mt-20 { margin-top: 20px; }
+.mb-10 { margin-bottom: 10px; }
+.mb-20 { margin-bottom: 20px; }
+.p-10 { padding: 10px; }
+.p-20 { padding: 20px; }
+
+/* 通用卡片样式（适配诗词分析页面） */
+.card-wrapper {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* 标题样式 */
+.page-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* 加载中样式 */
+.loading-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  color: #666;
+}
+
+/* 无数据样式 */
+.empty-wrapper {
+  text-align: center;
+  padding: 40px 0;
+  color: #999;
+}
+
+/* 响应式适配 */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+  .page-title {
+    font-size: 18px;
+  }
+  .card-wrapper {
+    padding: 15px;
+  }
+}
