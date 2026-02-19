@@ -68,4 +68,3 @@ cd logistics-visualization-dashboard
 
 # 安装依赖
 npm install
->>>>>>> cc9bf1144fedcc56b534ddfca5b51c2e63cacdb1
