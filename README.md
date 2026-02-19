@@ -3,7 +3,7 @@ Logistics visualization dashboard based on Vue and ECharts, showing national ord
 # 物流可视化大屏 (Logistics Visualization Dashboard)
 
 ## 项目介绍
-基于Vue + ECharts开发的物流/电商订单可视化大屏，展示全国订单分布、产品销量趋势、买家画像（年龄/性别）、运输方式占比等核心数据，支持5秒自动更新销量数据、点击产品切换详情。
+基于Vue + ECharts开发的物流/电商订单可视化大屏，展示不同商品全国订单分布、产品销量趋势、买家画像（年龄/性别）、运输方式占比等核心数据，点击产品切换详情。
 
 ## 技术栈
 - 前端框架：Vue 3 (Setup语法糖)
@@ -11,6 +11,7 @@ Logistics visualization dashboard based on Vue and ECharts, showing national ord
 - 地图数据：中国省级GeoJSON
 - 网络请求：Axios（封装为request工具）
 - 样式：原生CSS (Scoped)
+- 后端：Python fastapi
 
 ## 快速开始
 
