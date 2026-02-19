@@ -11,7 +11,7 @@ Logistics visualization dashboard based on Vue and ECharts, showing national ord
 - 地图数据：中国省级GeoJSON
 - 网络请求：Axios（封装为request工具）
 - 样式：原生CSS (Scoped)
-- 后端：Python fastapi
+- 后端：Python Fastapi
 
 ## 快速开始
 
