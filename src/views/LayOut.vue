@@ -2,19 +2,19 @@
   <div class="content">
     <div class="iner-left">
       <div class="warp">
-        <div class="chart" ref="chartRef2" style="width: 350px; height: 230px; margin-top: 10px;"></div>
-        <div class="chart" ref="chartRef6" style="width: 350px; height: 230px; margin-top: 10px;"></div>
-        <div class="chart" ref="chartRef8" style="width: 350px; height: 230px; margin-top: 10px;"></div>
+        <div class="chart" ref="chartRef2" style="width: 350px; height: 240px; margin-top: 10px;"></div>
+        <div class="chart" ref="chartRef6" style="width: 350px; height: 240px; margin-top: 10px;"></div>
+        <div class="chart" ref="chartRef8" style="width: 350px; height: 240px; margin-top: 10px;"></div>
       </div>
     </div>
     <div class="iner-mid">
       <div class="warp">
-        <div class="chart" ref="chartRef3" style="width: 800px; height: 760px; margin: 0 auto;"></div>
+        <div class="chart" ref="chartRef3" style="width: 900px; height: 760px; margin: 0 auto;"></div>
       </div>
     </div>
     <div class="iner-right">
       <div class="right-content">
-        <div class="chart" ref="chartRef4" style="width: 350px; height: 240px; margin-top: 10px;"></div>
+        <div class="chart" ref="chartRef4" style="width: 350px; height: 250px; margin-top: 10px;"></div>
         <div class="chart" ref="chartRef5" style="width: 350px; height: 240px; margin-top: 10px;"></div>
         <div class="chart" ref="chartRef7" style="width: 350px; height: 240px; margin-top: 10px;"></div>
       </div>
@@ -349,6 +349,6 @@ onUnmounted(() => {
   border-radius: 16px;
   border: 3px solid rgba(38, 198, 218, 0.2);
   backdrop-filter: blur(8px);
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 </style>
