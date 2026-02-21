@@ -1,7 +1,7 @@
 <template>
   <div class="login-container">
     <div class="login-card">
-      <!-- 原有登录表单 -->
+      <!-- 登录表单 -->
       <h2 class="login-title">物流可视化大屏</h2>
       <el-form ref="loginRef" :model="loginForm" :rules="loginRules" class="login-form">
         <el-form-item prop="username">
@@ -11,7 +11,7 @@
           <el-input v-model="loginForm.password" type="password" placeholder="请输入密码" prefix-icon="Lock" size="large" />
         </el-form-item>
         <div class="btn-group">
-          <!-- 新增：注册按钮，点击打开弹窗 -->
+          <!-- 注册按钮，点击打开弹窗 -->
           <el-button type="text" class="register-btn" @click="openRegisterDialog"> 注册账号 </el-button>
           <el-button class="login-btn" :loading="loading" size="large" @click="handleLogin" type="primary">
             登录
@@ -202,7 +202,6 @@ const handleRegister = async () => {
 </script>
 
 <style scoped>
-/* 原有样式无需修改，新增注册按钮样式 */
 .login-container {
   width: 100vw;
   height: 100vh;

@@ -44,27 +44,27 @@ const COLORS = {
 
 // ===================== 2. 【核心修改】补全所有图表默认数据 =====================
 const DEFAULT_DATA = {
-  // 1. 产品销量柱状图（原有）
+  // 1. 产品销量柱状图
   productSales: {
     products: ['小米 17', 'iPhone 17', 'vivo x300', 'OPPO Find X9', 'Samsung Galaxy S24'],
     sales: [1200, 1850, 2000, 1500, 1900]
   },
-  // 2. 年龄占比饼图（原有）
+  // 2. 年龄占比饼图
   ageData: {
     age_ranges: ['18-25', '26-35', '36-45', '45+'],
     counts: [320, 580, 240, 120]
   },
-  // 3. 性别占比饼图（原有）
+  // 3. 性别占比饼图
   genderData: {
     gender_ranges: ['男', '女'],
     counts: [650, 610]
   },
-  // 4. 运输方式饼图（原有）
+  // 4. 运输方式饼图
   transportData: {
     transports: ['陆运', '空运', '水运'],
     counts: [450, 280, 150]
   },
-  // 5. 【新增】全国地图默认数据（必须给，否则空白）
+  // 5. 全国地图默认数据（必须给，否则空白）
   shippingData: {
     shipping_data: [
       { name: '北京市', value: 320 },
@@ -77,12 +77,12 @@ const DEFAULT_DATA = {
       { name: '山东省', value: 300 }
     ]
   },
-  // 6. 【新增】销量折线图默认数据（x轴+series）
+  // 6. 销量折线图默认数据（x轴+series）
   salesTrend: {
     dates: ['1日', '2日', '3日', '4日', '5日', '6日', '7日', '8日'],
     sales: [120, 150, 180, 160, 200, 220, 190, 250]
   },
-  // 7. 【新增】好评率面积图默认数据（80-100区间）
+  // 7. 好评率面积图默认数据（80-100区间）
   rateTrend: {
     dates: ['1日', '2日', '3日', '4日', '5日', '6日'],
     rates: [92, 93, 91, 95, 94, 96]
@@ -127,7 +127,7 @@ const safeMap = (sourceArr, mapper) => {
   return sourceArr.map(mapper).filter(Boolean)
 }
 
-// ===================== 5. 图表配置（全部使用默认数据兜底） =====================
+// ===================== 5. 图表配置 =====================
 // 5.1 产品销量柱状图
 const getProductsOption = (data = {}, goodsName = '') => {
   const productData = { ...DEFAULT_DATA.productSales, ...data }
@@ -236,7 +236,7 @@ const getGenderOption = (data = {}, goodsName = '') => {
 }
 
 // ===================== 6. 数据请求 =====================
-// 6.1 获取产品销量（5秒更新）
+// 6.1 获取产品销量
 const fetchProductSales = async () => {
   try {
     const res = await api.get('/api/products_sales')
@@ -300,7 +300,7 @@ onMounted(async () => {
   // 5秒更新
   fetchTimer.value = setInterval(fetchProductSales, 1000)
 })
-
+// 销毁图表
 onUnmounted(() => {
   clearInterval(fetchTimer.value)
   Object.values(chartInstances).forEach(inst => inst?.dispose())
@@ -308,7 +308,6 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-/* 样式完全不变，和你之前一致 */
 .content {
   display: flex;
   gap: 5px;
