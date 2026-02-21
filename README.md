@@ -53,7 +53,7 @@ npm run lint
 - 后端：Python Fastapi
 
 ## 演示截图
-![物流可视化大屏全貌](screenshots/局部截取_20260219_161856.png)
+![物流可视化大屏全貌](screenshots/显示图片.png)
 
 ## 快速开始
 
