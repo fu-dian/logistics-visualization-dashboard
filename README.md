@@ -52,6 +52,9 @@ npm run lint
 - 样式：原生CSS (Scoped)
 - 后端：Python Fastapi
 
+## 演示截图
+![物流可视化大屏全貌](screenshots/局部截取_20260219_161856.png)
+
 ## 快速开始
 
 ### 1. 环境要求
